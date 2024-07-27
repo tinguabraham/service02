@@ -16,4 +16,4 @@ jobs:
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
     - name: Run AZ ML job
-      run: az ml job create --file src/job.yml
+      run:  az ml job create --file src/job.yml --resource-group azure-ml --workspace-name azure-ml-amin
